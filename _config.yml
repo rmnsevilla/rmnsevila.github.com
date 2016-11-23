@@ -1,34 +1,83 @@
-### your site title here
+### GENERAL SETTINGS ###
 
-title: RMN Sevilla
-baseurl:  # name of the repository
+# Site settings
+title: RMN Sevilla.
+description: "Somos una empresa que arreglamos cosas"
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "http://www.rmnsevilla.com"
 
-highlighter: rouge
+# Build settings
 markdown: kramdown
-### exclude the instructions / write-up in the README.md
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
 
 
+### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: facebook
+    url: http://facebook.com/rmnsevilla
+  - title: twitter
+    url: http://twitter.com/rmnsevilla
+  - title: instagram
+    url: http://instagram.com/rmnsevilla
+
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - ca/ Tal y Cual, n12,
+    - 41002, Sevilla,
+    - ESPAÑA.
+email: hola@rmnsevilla.com
+tel: +34 8493-4893
 
 
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
-#optimization
-#compress.html
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
+# Members information. Shown on About page.
+members:
+  - name: Raquel Muñoz
+    position: Directora
+    text: La mejor del mundo mundial.
+    img: team01.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:raquel@rmnsevilla.com
+      - title: twitter
+        url: http://twitter.com/raquelme
+  - name: Marco Van Basten
+    position: CTO
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team02.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
 
+# Clients information. Shown on Home and About pages.
+clients:
+  - name: Cliente1
+    img: client01.png
+  - name: Cliente2
+    img: client02.png
 
-sass:
- style: compressed
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "RMNSevilla ayuda a la gente, tu sabe primo. "
 
-exclude:
-- README.md
-
-
-gems: [jekyll-seo-tag, jekyll-paginate]
+# Testimonial content. Shown on Home and About page.
+testimonial:
+    message: "Raquel siempre escucha mis tonteræias sin juzgarme."
+    author: Marco Polo
+    position: TONTO DEL PUEBLO - USA

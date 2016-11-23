@@ -1,2 +1,0 @@
-# rmnsevila.github.com
-cms
